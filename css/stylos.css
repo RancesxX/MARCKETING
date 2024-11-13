@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Itim&family=Permanent+Marker&family=Satisfy&family=Spicy+Rice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Itim&family=Noto+Sans+JP:wght@100..900&family=Permanent+Marker&family=Satisfy&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Spicy+Rice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Bungee&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Itim&family=Noto+Sans+JP:wght@100..900&family=Permanent+Marker&family=Satisfy&family=Signika+Negative:wght@300..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Spicy+Rice&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-around;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.596);
+    position: relative;
+    z-index: 2;
+}
+
+.hed1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hed1 h2 {
+    font-size: 23px;
+    color: white;
+    font-family: "Satisfy", serif;
+    margin: 0;
+    
+}
+.hed1 img {
+    height: 40px;
+}
+.hed2 {
+    display: flex;
+}
+.hed2 ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.hed2 li {
+    width: 120px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hed2 li:hover{
+    background-color: rgb(117, 117, 117);
+}
+.hed2 li:hover a {
+    color: rgb(0, 0, 0);
+}
+.hed2 a {
+    color: white;
+    text-decoration: none;
+    font-family: "Spicy Rice", serif;
+    font-weight: 100;
+    font-size: 16px;
+    margin: 0;
+}
+
+.hed2 img {
+    height: 24px;
+}
+.carousel1 {
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(to right, black, rgba(0, 0, 0, 0.411));
+}
+
+.carousel2 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+}
+.descripcion {
+    box-sizing: border-box;
+    min-width: 100%; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-left: 30px ;
+    padding-top: 60px;
+}
+.descripcion img{
+    height: 200px;
+    width: 430px;
+}
+.descripcion p{
+    font-size: 15px;
+    font-family: "Spicy Rice", serif;
+    font-weight: lighter;
+    color: rgb(202, 202, 202);
+    margin: 0;
+}
+.descripcion strong{
+    color: yellow;
+}
+.descripcion h3{
+    font-size: 16px;
+    font-family: "Bellota", system-ui;
+    width: 650px;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    border-top: 2px solid rgb(223, 203, 26);
+    padding-top:10px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+.im1{
+    background: linear-gradient(to right, black, rgba(0, 0, 0, 0.288)), url("../peliculas2/avenger/baner.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+.im2{
+    background: linear-gradient(to right,black,rgba(0, 0, 0, 0.288)),url("../peliculas2/bob-esponja/la-pelicula-de-bob-esponja_1920x1080_xtrafondos.com.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+.im3 {
+    background: linear-gradient(to right, black, rgba(0, 0, 0, 0.096)), url("../peliculas2/venom/fondo2.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.boton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.boton button {
+    width: 300px;
+    height: 40px;
+    background-color: rgb(255, 251, 0);
+    border: 2px solid black;
+    box-shadow: 0 20px 20px black;
+    transition: transform 0.5s;
+}
+.boton button:hover{
+    transform: scale(1.05);
+}
+.boton a {
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+    font-family: "Spicy Rice", serif;
+    font-size: 18px;
+}
+.boton img{
+    height: 52px;
+    width: 50px;
+}
+.descripcion1{
+    padding: 10px 20px 5px 20px;
+    background-color: black;
+    box-shadow: 0 -40px 40px black;
+    position: relative;
+        z-index: 2;
+}
+.descripcion1 h1{
+    font-family: "Permanent Marker", serif;
+    font-weight: lighter;
+    font-size: 25px;
+    color: rgb(255, 217, 0);
+    text-shadow: 2px -2px 0 #000000,
+            2px -2px 0 #000,
+            -2px 2px 0 #000,
+            2px 2px 0 #ffffff;
+    margin: 0;
+}
+.descripcion1 strong{
+    color: rgb(10, 68, 95);
+}
+.descripcion1 p{
+    font-family: "Sour Gummy", serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: white;
+    text-align: justify;
+    margin: 0;
+}
+.intro{
+    padding: 0 20px;
+    background-color: black;
+    border-bottom: 2px solid rgb(0, 191, 224);
+}
+.intro h2{
+    font-family: "Permanent Marker", serif;
+    font-weight: 200;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px -2px 0 #000000,
+            2px -2px 0 #000,
+            -2px 2px 0 #000,
+            2px 2px 0 #ffffff;
+}
+.intro p{
+    font-family: "Spicy Rice", serif;
+    font-weight: lighter;
+    font-size: 15px;
+    color: rgb(160, 160, 160);
+}
+.carrusel {
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    background: black;
+}
+.margen{
+    border-bottom: 2px solid rgb(0, 147, 233);
+}
+.carrusel h2{
+    color: rgb(0, 191, 224);
+    font-family: "Permanent Marker", serif;
+    font-weight: 200;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+.tipos {
+    display: flex;
+    transition: transform 0.5s ease;
+    will-change: transform;
+}
+.car{
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.5s ease;
+}
+.car1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+}
+.car1 img{
+    object-fit: cover;
+    height: 200px;
+    width: 150px;
+}
+.car1 img:hover{
+    border: 4px solid rgb(0, 191, 224);
+}
+.car1 h2{
+    font-size: 15px;
+    text-align: center;
+    padding-top: 3px;
+    color: white;
+}
+.car1 strong{
+    color: rgb(0, 191, 224);
+}
+.botonn {
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(0, 191, 224);
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.829);
+}
+.botonn1{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(251, 255, 0);
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.829);
+}
+.izquierda {
+    left: 10px;
+}
+.derecha {
+    right: 10px;
+}
+.izquierda1 {
+    left: 10px;
+}
+.derecha1 {
+    right: 25px;
+}
+.compras{
+    display: flex;
+    flex-direction: row;
+}
+.compras1{
+    width: 80%;
+    height: 133vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y:hidden;
+    background: linear-gradient(to right, black, rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0.438)), url("../fondos/wallpaperflare.com_wallpaper.jpg");
+    background-size: cover;
+}
+.art{
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.art h2{
+    font-family: "Permanent Marker", serif;
+    font-weight: lighter;
+    font-size: 22px;
+    color: yellow;
+    
+}
+.compras2{
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.5s ease;
+}
+.art1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    margin-right: 10px;
+}
+.art2{
+    width: 300px;
+    height: 380px;
+    background-color: rgba(0, 0, 0, 0.507);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 15px;
+    padding-top: 10px;
+    border: 3px solid rgb(0, 0, 0);
+}
+.art2:hover{
+    border: 3px solid rgb(224, 190, 0);
+    background-color: rgba(255, 255, 255, 0.507);
+    color: black;
+}
+.art2 img{
+    height: 220px;
+    width: auto;
+}
+.art2 .img2{
+    height: 150px;
+    width: auto;
+}
+.art22{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+}
+.art22 h1{
+    font-family: "Permanent Marker", serif;
+    font-weight:lighter;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+.art22 strong{
+    font-family: "Spicy Rice", serif;
+    font-weight: lighter;
+    font-size: 18px;
+    color: rgb(255, 0, 0);
+    text-shadow: 1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+}
+.art22 h2{
+    font-family: "Spicy Rice", serif;
+    font-weight: lighter;
+    font-size: 15px;
+    color: rgb(90, 89, 89);
+}
+.art22 h2:hover{
+    color: black;
+}
+.art22 h3{
+    font-family: "Exo 2", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.art22 button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: #000000;
+    padding: 0 10px;
+    border: none;
+}
+.art22 button img{
+    height: 35px;
+    width: 35px;
+}
+.art22 button a{
+    text-decoration: none;font-family: "Spicy Rice", serif;
+    font-weight: lighter;
+    padding: 4px;
+    margin-left: 10px;
+    color: #000000;
+    background-color: rgb(252, 211, 28);
+}
+.art22 button a:hover{
+    padding: 54x;
+    margin-left: 10px;
+    color: #000000;
+    background-color: rgb(88, 88, 88);
+}
+.arti{
+    background-color: rgb(0, 0, 0);
+    width: 20%;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -20px 0 30px rgb(0, 0, 0);
+    position: relative;
+    z-index: 2;
+}
+.arti h2{
+    font-family: "Permanent Marker", serif;
+    font-weight: lighter;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(245, 159, 0);
+    padding-bottom: 8px;
+    text-shadow: 2px -2px 0 #000000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #ffffff;
+}
+.arti ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.arti li{
+    padding: 5px 20px;
+}
+.arti li:hover{
+    width: auto;
+    background-color: rgb(77, 228, 228);
+}
+.arti li:hover a{
+    color: black;
+}
+.arti a:hover{
+    text-decoration: underline;
+}
+.arti a{
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+    font-family: "Spicy Rice", serif;
+    font-weight: lighter;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background: black;
+    justify-content: space-around;
+    align-items: start;
+    padding: 20px;
+}
+.fo1,
+.fo2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.fo1 h2,
+.fo2 h2 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+    font-family: "Permanent Marker", serif;
+
+}
+.fo1 ul,
+.fo2 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.fo1 li,
+.fo2 li {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 5px 0;
+    font-family: "Spicy Rice", serif;
+    font-size: 17px;
+    font-weight: lighter;
+}
+.fo1 a,
+.fo2 a {
+    text-decoration: none;
+    color: white;
+}
+.fo1 img,
+.fo2 img {
+    height: 25px;
+    padding-right: 5px;
+}
+.end h2{
+    color: rgb(255, 174, 0);
+    font-size: 15px;
+    background-color: rgb(87, 86, 86);
+    margin: 0;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
