@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Itim&family=Permanent+Marker&family=Satisfy&family=Spicy+Rice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Itim&family=Noto+Sans+JP:wght@100..900&family=Permanent+Marker&family=Satisfy&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Spicy+Rice&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.171), rgb(0, 0, 0)), url("../fondos/regis.jpg");
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+.reg {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+form {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.61);
+    box-shadow: 0 0 15px black;
+    transition: transform 0.5s, box-shadow 0.5s,background-color 0.5s;
+}
+form:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 35px black;
+    background-color: rgba(0, 0, 0, 0.822);
+}
+
+label {
+    font-size: 18px;
+    font-family: "Permanent Marker", serif;
+    color: rgb(255, 196, 0);
+}
+
+input {
+    width: 320px;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    background: transparent;
+    outline: none;
+    transition: transform 0.3s;
+}
+input:hover{
+    transform: scale(1.1);
+}
+
+::placeholder {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(168, 168, 168);
+    font-size: 15px;
+}
+
+input[type="submit"] {
+    font-family: "Spicy Rice", serif;
+    width: 320px;
+    height: 40px;
+    font-size: 20px;
+    background-color: aqua;
+    border:2px solid black;
+}
+input[type="text"]:not(:placeholder-shown),
+input[type="email"]:not(:placeholder-shown),
+input[type="password"]:not(:placeholder-shown),
+input[type="number"]:not(:placeholder-shown) {
+    color: #ffffff;
+    font-family: "Spicy Rice", serif;
+    font-weight:100;
+    border: 2px solid white;
+}
+button{
+    background-color: rgb(255, 0, 0);
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    transition: transform 0.4s;
+    margin-bottom: 20px;
+}
+button:hover{
+    transform: scale(1.1);
+}
+button a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-family: "Permanent Marker", serif;
+}
+.der h2{
+    color: rgb(255, 187, 0);
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 50px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.iz h2{
+    color: rgb(255, 196, 0);
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 50px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.der h2:hover{
+    color: rgb(255, 0, 0);
+    transform: scale(1.1);
+}
+.iz h2:hover{
+    color: rgb(255, 0, 0);
+    transform: scale(1.1);
+}
+#message {
+    position: absolute;
+    z-index: 2;
+    top: 5%;
+    width: 500px;
+    height: 410px;
+    background-image:url("../fondos/deadpool.jpg");
+    color: #ffffff;
+    background-size: cover;
+    padding:130px 40px ;
+    display: none;
+    font-family: "Spicy Rice", serif;
+    font-weight: lighter;
+    border-radius: 10px;
+    text-align: justify;
+    font-size: 20px;
+    box-shadow: 0 0 50px black;
+}
+#message strong{
+    color: rgb(253, 0, 0);
+    font-size: 30px;
+    text-align:justify;
+    font-family: "Permanent Marker", serif;
+    text-shadow: 1px -1px 0 #000000,
+            1px -1px 0 #000000,
+            -1px 1px 0 #ffffff,
+            1px 1px 0 #ffffff;
+}
