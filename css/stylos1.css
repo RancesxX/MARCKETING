@@ -13,6 +13,7 @@ main{
     background: radial-gradient(circle, rgba(0, 0, 0, 0.171), rgb(0, 0, 0)), url("../fondos/regis.jpg");
     background-size: cover;
     height: 100vh;
+    overflow: hidden;
 }
 .reg {
     display: flex;
@@ -31,7 +32,7 @@ form {
     transition: transform 0.5s, box-shadow 0.5s,background-color 0.5s;
 }
 form:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     box-shadow: 0 0 35px black;
     background-color: rgba(0, 0, 0, 0.822);
 }
@@ -80,11 +81,13 @@ input[type="number"]:not(:placeholder-shown) {
     border: 2px solid white;
 }
 button{
-    background-color: yellow;
+    background-color: rgb(255, 0, 0);
+    border-radius: 20px;
     width: 200px;
     height: 40px;
     box-shadow: 0 0 20px rgb(0, 0, 0);
     transition: transform 0.4s;
+    margin-bottom: 20px;
 }
 button:hover{
     transform: scale(1.1);
@@ -96,24 +99,52 @@ button a{
     font-family: "Permanent Marker", serif;
 }
 .der h2{
-    color: white;
+    color: rgb(255, 187, 0);
     font-family: "Noto Sans JP", sans-serif;
     font-size: 50px;
     cursor: pointer;
     transition: transform 0.2s;
 }
 .iz h2{
-    color: white;
+    color: rgb(255, 196, 0);
     font-family: "Noto Sans JP", sans-serif;
     font-size: 50px;
     cursor: pointer;
     transition: transform 0.2s;
 }
 .der h2:hover{
-    color: rgb(255, 187, 0);
+    color: rgb(255, 0, 0);
     transform: scale(1.1);
 }
 .iz h2:hover{
-    color: rgb(255, 187, 0);
+    color: rgb(255, 0, 0);
     transform: scale(1.1);
+}
+#message {
+    position: absolute;
+    z-index: 2;
+    top: 5%;
+    width: 500px;
+    height: 410px;
+    background-image:url("../fondos/deadpool.jpg");
+    color: #ffffff;
+    background-size: cover;
+    padding:130px 40px ;
+    display: none;
+    font-family: "Spicy Rice", serif;
+    font-weight: lighter;
+    border-radius: 10px;
+    text-align: justify;
+    font-size: 20px;
+    box-shadow: 0 0 50px black;
+}
+#message strong{
+    color: rgb(253, 0, 0);
+    font-size: 30px;
+    text-align:justify;
+    font-family: "Permanent Marker", serif;
+    text-shadow: 1px -1px 0 #000000,
+            1px -1px 0 #000000,
+            -1px 1px 0 #ffffff,
+            1px 1px 0 #ffffff;
 }
