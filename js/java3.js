@@ -1,18 +1,34 @@
-let currentIndex = 0;
+ let intentos = 0;
+        const maxIntentos = 3;
 
-        function mover(carouselId, direction) {
-            const carousel = document.getElementById('carrito');
-            const items = carousel.querySelector('.compras2');
-            const totalItems = items.children.length;
-             const itemWidth = items.children[0].offsetWidth;
+        document.getElementById("registrationForm").onsubmit = function (event) {
+            event.preventDefault(); // Evita el envío del formulario
 
-            currentIndex += direction;
+            if (intentos < maxIntentos) {
+                // Obtener los valores del formulario
+                const nombre = document.getElementById("fname").value;
+                const email = document.getElementById("email").value;
+                const edad = document.getElementById("Edad").value;
+                const password = document.getElementById("lname").value;
 
-            if (currentIndex < 0) {
-                currentIndex = totalItems - 1;
-            } else if (currentIndex >= totalItems) {
-                currentIndex = 0;
+                // Mostrar los datos registrados en el contenedor
+                document.getElementById("message").innerHTML = `
+                    <strong>¡Usted  ya está registrado!</strong><br>
+                    Nombre: ${nombre}<br>
+                    Correo: ${email}<br>
+                    Contraseña: ${password}<br>
+                    Edad: ${edad}
+                `;
+                document.getElementById("message").style.display = "block"; // Hacer visible el mensaje
+
+
+                // Reiniciar el formulario
+                this.reset();
+                intentos = 0; // Reiniciar intentos si el registro es exitoso
+            } else {
+                document.getElementById("message").textContent = "Has alcanzado el máximo de intentos.";
+                document.getElementById("btnEnviar").disabled = true; // Deshabilitar el botón
             }
 
-            items.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-        }
+            intentos++;
+        };
